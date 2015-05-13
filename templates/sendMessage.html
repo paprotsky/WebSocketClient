@@ -1,0 +1,12 @@
+<h2>Send a New Message</h2>
+<div ng-controller="SendMessageCtrl">
+    <form ng-submit="sendMessage()" action="#showMessages">
+        <textarea class="form-control" ng-model="enteredMessage" rows="4" placeholder="Write your message here..."></textarea><br>
+        <input type="submit" class="btn btn-primary" value="Send">
+    </form>
+<!--     <ul>
+        <li ng-repeat="message in messages">{{message}}
+            <a href='#' ng-click='removeName(message)'>remove</a>
+        </li>
+    </ul> -->
+</div>
